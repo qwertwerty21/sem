@@ -118,6 +118,11 @@ ul{
 	background-color: $op-darkred;
 }
 
+a, button{
+	-ms-touch-action: manipulation;	/* IE10  */
+	touch-action: manipulation;		/* IE11+ */
+}
+
 //JUMBOTRON STYLE
 
 .jumbotron{
