@@ -1,0 +1,403 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sassSS/stylesheets/styles.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/twitterFetcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+</head>
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="jumbotron text-center">
+                <h1 class="front-page-header">Sem</h1>
+            </div>
+
+            <audio id="bgmPlayer">
+                <source src="sounds/onepunchtheme.ogg" type="audio/ogg" id="oggSrc">
+                <source src="sounds/onepunchtheme.mp3" type="audio/mpeg" id="mp3Src">
+            </audio>
+
+            <div id="volunteerOPGifSect" class="volunteer-op-gif-sect hidden">
+                <img src="img/volop.gif" alt="One Punch Man punch!" class="img-responsive">
+            </div>
+
+            <div id="classEvoSect" class="class-evo-sect hidden">
+                <img id="classEvoImg" class="img-responsive" src="" alt="Class Img">
+                <h3 id="evoMsg" class="evo-msg"></h3>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="mainSection" class="col-sm-9">
+
+                        <div id="classroomView" class="hidden text-center classroom-view-sect">
+                            <h2>
+                                <span id="classroomHeaderHTML" class="classroom-header-html"></span> 
+                                <span id="classLevelHTML" class="class-level-html"></span>
+                            </h2>
+                            <!--Consider just making your class object appear heere DO ME--> 
+                            <div id="classAsWhole" class="class-as-whole-sect">
+                                <img id="classAsWholeImg" class="img-responsive class-as-whole-img" src="" alt="Class As a Whole Image">
+                                <h4 id="lvlToNextEvoHeader" class="hidden lvl-to-next-evo-header">Levels to Next Evolution</h4>
+
+                                <div class="classroomToolsSect classroom-tools-sect">
+                                    <ul class="classroom-tools-ul1">
+                                        <li>
+                                            <button id="addClassLevelBtn" class="btn btn-inline">+1 Class Level</button>
+                                        </li>
+                                        <li>
+                                            <button id="minusClassLevelBtn" class="btn btn-inline">-1 Class Level</button>
+                                        </li>
+                                        <li>
+                                            <button id="resetClassLevelBtn" class="btn btn-inline">Reset Class Level</button>
+                                        </li>
+                                        <li>
+                                            <button id="resetHWPointsBtn" class="btn btn-inline">Reset Homework</button>
+                                        </li>
+                                    </ul>
+                                    <ul class="classroom-tools-ul2">
+                                        <li>
+                                            <button id="chooseVolunteerBtn" class="btn btn-inline">Choose Volunteer</button>
+                                        </li>
+                                        <li>
+                                            <button id="chooseVolunteerOPBtn" class="btn btn-inline">Choose Volunteer OP</button>
+                                        </li>
+                                        <li>
+                                            <button id="openClassReflectionsBtn" class="btn btn-inline">Class Reflections</button>
+                                        </li>
+                                        <li>
+                                            <button id="deleteClassroomBtn" class="btn btn-inline">Delete Classroom</button>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>                       
+
+
+                            <div id="studentSect">
+                                
+                                <div class="row">
+                                    <ul class="studentList clearfix student-list">
+                                    
+                                    </ul>
+                                </div>
+                                
+
+
+
+
+                                <script id="studentTemplate" type="text/x-handlebars-template">
+                                    {{#each this}}
+                                        <div class="indivStudent">
+
+                                            <li id="{{studentName}}">
+
+                                                <div class="indiv-student-label">
+                                                    <span class="studentName">{{studentName}}</span> 
+                                                    <span class="hWPoints">{{studentHW}}</span>
+                                                </div>
+                                                
+                                                
+                                                <div id="studentSubMenuSect">
+                                                    <ul class="studentSubMenu hidden">
+                                                        
+                                                        <li>
+                                                            <button class="btn btn-inline addHWBtn">+ HW</button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="btn btn-inline minusHWBtn">- HW</button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="btn btn-inline openStudentNoteBtn">Student Notes</button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="btn btn-inline changeNameBtn">Change Name</button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="btn btn-inline randImgBtn">Random Img</button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="btn btn-inline removeStudentBtn">Remove Student</button>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </li>
+
+                                            
+
+                                            <img src="{{studentImg}}" alt="Student Img" class="img-responsive student-img">
+
+                                        </div>
+                                    
+                                    {{/each}}
+                                </script> 
+
+                                <div id="modalStudentChangeName" class="modal fade modal-student-name-change" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!--Actual modal content-->
+                                        <div class="modal-content">
+
+                                            <div class="modal-header text-center">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h3>Change Student Name</h3>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <form role="form" class="form-inline">
+
+                                                    <div class="form-group text-center">
+                                                        <label for="changeStudentNameInput">Student Name</label>
+                                                        <input type="text" id="changeStudentNameInput" value="" placeholder="" required>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                               <button id="modalStudentChangeNameConfirmBtn" class="btn btn-block">Change!</button>
+                                           </div>
+
+                                       </div>
+                                   </div>
+                               </div>
+
+
+                                <div id="modalStudentNotes" class="modal fade modal-student-notes" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!--Actual modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header text-center">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <img src="" alt="Student Img" id="modalStudentNotesStudentImg" class="img-responsive">
+                                                <h2><span id="modalStudentNotesStudentName">Sunny's</span> student notes</h2>
+                                            </div>
+                                            
+                                            <div class="modal-body">
+                                                <div class="pastStudentNotes">
+                                                    <ul class="pastStudentNotesList past-students-notes-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <textarea name="inputStudentNotes" id="inputStudentNotes" placeholder=""></textarea>
+                                                <button id="addNewStudentNoteBtn" class="btn btn-block">enter</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        <div class="addNewStudentSect add-new-student-sect">
+                            <input type="text" id="addNewStudentName" placeholder="New Student Name">
+                            <button id="addNewStudentBtn" class="btn btn-inline">add!</button>
+                        </div>
+
+                        <div id="modalChooseVolunteer" class="modal fade modal-choose-volunteer" role="dialog">
+                            <div class="modal-dialog">
+                                <!--Actual modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 id="modalChooseVolunteerStudentName"></h2>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <img id="modalChooseVolunteerStudentImg" class="img-responsive" src="img/op.png" alt="Student Img">
+                                    </div>
+                                        
+                                    <div class="modal-footer">
+                                        <button class="btn btn-block" data-dismiss="modal">Ok</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modalClassReflections" class="modal fade modal-class-reflections" role="dialog">
+                            <div class="modal-dialog">
+                                <!--Actual modal content-->
+                                <div class="modal-content">
+
+                                    <div class="modal-header text-center">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <img src="" alt="Class Img" id="modalClassReflectionsClassImg" class="img-responsive">
+                                        <h2>Class reflections</h2>
+                                    </div>
+                                    
+                                    <div class="modal-body">
+                                        <div class="pastReflections">
+                                            <ul class="pastReflectionsList past-reflections-list">
+
+                                            </ul>
+                                            <!--Use a funciton to populatie with old comments according to classreflections array-->        
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <textarea name="inputClassReflections" id="inputClassReflections" placeholder=""></textarea>
+                                        <button id="addNewClassReflectionBtn" class="btn btn-block">enter</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    <div id="frontPageView" class="front-page-view">
+                        <form role="form" class="front-page-form">
+                            <div class="form-group">
+
+                                <div class="text-center">
+                                    <label for="chooseExistClassroom" class="choose-exist-class-label">Choose an existing classroom</label>
+                                    <select name="chooseExistClassroom" id="chooseExistClassroom" class="form-control choose-exist-class-select">
+
+                                    </select>
+                                    <button type="button" id="loadExistClassroomBtn" class="btn btn-block load-exist-class-btn">Load Classroom</button>
+
+                                </div>
+
+                                <div class="or-sect">
+                                    <h2 class="text-center">Or...</h2>
+                                </div>
+
+                                <div class="text-center make-new-classroom-sect">
+                                    <h3>Make A New One</h3>
+                                    <button type="button" id="frontpgMakeNewClassroom" class="btn btn-block">Create Classroom</button>
+                                </div>
+
+                                <div id="modalCreateClass" class="modal fade modal-create-class" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!--Actual modal content-->
+                                        <div class="modal-content">
+
+                                            <div class="modal-header text-center">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h3>Make A New Classroom</h3>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <form role="form" class="form-inline">
+
+                                                    <div class="form-group text-center">
+                                                        <label for="newClassroomName">Classroom Name</label>
+                                                        <input type="text" id="newClassroomName" placeholder="Mr.Kim's English Class" required>
+                                                    </div>
+
+
+                                                    <div class="form-group text-center">
+                                                        <label for="newClassroomGrade">Grade</label>
+                                                        <select name="newClassroomGrade" id="newClassroomGrade">
+                                                            <option value="Preschool">Preschool</option>
+                                                            <option value="Kindergarten">Kindergarten</option>
+                                                            <option value="1st Grade">1st Grade</option>
+                                                            <option value="2nd Grade">2nd Grade</option>
+                                                            <option value="3rd Grade">3rd Grade</option>
+                                                            <option value="4th Grade">4th Grade</option>
+                                                            <option value="5th Grade">5th Grade</option>
+                                                            <option value="6th Grade">6th Grade</option>
+                                                            <option value="7th Grade"> 7th Grade</option>
+                                                            <option value="8th Grade">8th Grade</option>
+                                                            <option value="9th Grade">9th Grade</option>
+                                                            <option value="10th Grade">10th Grade</option>
+                                                            <option value="11th Grade">11th Grade</option>
+                                                            <option value="12th Grade">12th Grade</option>
+                                                            <option value="Special Needs">Special Needs</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+
+                                                        <label for="newClassroomYear">Year</label>
+                                                        <input type="number" id="newClassroomYear" min="1970" max="2100" value="2016" required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button id="modalMakeNewClassroom" class="btn btn-block">Make it!</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                        <!--TO DO  
+                            RECONSIDER LABEL FOR CHOOSE EXISTING CLASSROOM LAYOUT 
+                            MAkE A CLASSROOM CONSTRUCTOR FUNCTION 
+                            REFINE CREATE CLSS MODAL 
+                            KEEP WORKING ON THE FRONT PAGE OBJECT 
+                            IE WHAT HAPPANES WHEN THE MAKE BUTTON IS PRESSED?
+
+                        -->
+                    </div>
+                </form>
+            </div> <!--End of div#frontPageView-->
+
+        </div> <!--End of div.container-fluid.col-sm-9-->
+
+        <div id="twitterSection" class="col-sm-3 twitter-section">
+            <button type="button" id="closeTwitterSectionBtn" class="close-twitter-section-btn clearfix">&times;</button>
+            <ul class="tweetList tweet-list">
+                
+                <a href="https://twitter.com/hashtag/sunnyssaem?src=hash" target="_blank">
+                    <img src="img/tweeticon3.png" alt="Twitter Icon" class="tweet-icon img-responsive">
+                </a>
+                
+                <script id="twitterTemplate" type="text/x-handlebars-template">
+                    {{#each this}}
+                    <li class="indiv-tweet-li">
+                        <h4>{{{tweet}}}</h4>
+                        <h5>{{{author}}}</h5>
+                    </li>
+                    {{/each}}
+                </script>        
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/handlebarTweetCompile.js"></script>
+<script src="js/frontpage.js"></script>
+<script src="js/Classroom.js"></script>
+<script src="js/Student.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,1122 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/normalize";
+
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+//FONTS
+@include font-face( "opfont", font-files( "../../fonts/eastwestital-webfont.ttf", "../../fonts/eastwestital-webfont.woff", "../../fonts/eastwestital-webfont.woff2" ) );
+
+//DEFAULTS
+
+*{
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+	
+.container-fluid{
+	background-color: $op-darkred;
+}
+
+//JUMBOTRON STYLE
+
+.jumbotron{
+
+	background-color: $op-darkred;
+	background: url('../../img/opbg.jpg');
+	height: 300px;
+	margin-bottom: 0;
+	@include animation( "sidescroll 60s linear infinite" );
+
+	
+	.front-page-header{
+		color: $op-red;
+		font-family: "opfont";
+		font-size: 7.5em;
+		@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+	}	
+
+}
+
+//KEYFRAMES SIDESCROLL
+
+@include keyframes( sidescroll ){
+	
+	0%{
+     background-position: 0 0;
+ 	}
+
+ 	100%{
+     background-position: 1920px 0;
+ 	}
+}
+
+//FRONTPAGE FORM STYLE
+
+.front-page-form{
+
+	.choose-exist-class-label{
+			color: $op-black;
+			font-family: "opfont";
+			font-size: 3em;
+			font-weight: 500;
+			margin-top: 1em;
+			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+	}
+	
+	.choose-exist-class-select{
+		color: $op-black;
+		font-family: "opfont";
+		font-size: 3em;
+		height: auto;
+		padding: .5em;
+
+		option{
+			color: $op-black;
+			font-family: "opfont";
+			font-weight: 400;
+		}
+
+	}
+
+	.btn{
+		background-color: $op-blue;
+		border: 1px solid $op-blue;
+		color: #fff;
+		font-family: "opfont";
+		font-size: 4em;
+		padding: .1em;
+
+		&:hover{
+			background-color: $op-darkblue;
+		}
+	}
+
+	.or-sect{
+		padding: .5em;
+		
+		h2{
+			color: $op-red;
+			font-family: "opfont";
+			font-size: 6em;
+			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+		}
+
+	}
+
+	.make-new-classroom-sect{
+		
+		h3{
+			color: $op-black;
+			font-family: "opfont";
+			font-size: 3em;
+			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+		}
+
+	}
+
+	//MODAL CREATE CLASS STYLE
+
+	.modal-create-class{
+
+		.modal-header{
+			background-color: $op-darkred;
+
+			h3{
+				color: $op-red;
+				font-family: "opfont";
+				font-size: 4em;
+				@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+			}		
+		}
+
+		.modal-body{
+			background-color: $bg-white;
+			color: $op-black;
+			font-size: 1.3em;
+			
+			label{
+				font-size: 1.7em;
+			}
+
+			input{
+				margin-left: .2em;
+				padding: .6em;
+			}
+
+			select{
+				margin-left: .2em;
+				margin-right: 1em;
+				padding: .6em;
+			}
+		}
+
+		.modal-footer{
+			background-color: $bg-white;
+		}
+		
+	}
+
+}
+
+//CLASSROOM VIEW STYLE
+
+.classroom-view-sect{
+
+	h2{
+
+		@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+
+		.classroom-header-html{
+			color: $op-red;
+			font-family: "opfont";
+			font-size: 3em;
+		}
+
+		.class-level-html{
+			color: $op-black;
+			font-family: "opfont";
+			font-size: 2em;
+			margin-left: .1em;
+		}
+
+	}
+
+}
+
+//CLASS AS WHOLE SECT STYLE
+
+.class-as-whole-sect{
+
+	position: relative;
+	
+	.class-as-whole-img{
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 35%;
+	}
+
+	.lvl-to-next-evo-header{
+		color: $op-black;
+		font-size: 1.5em;
+		
+	}
+
+	.classroom-tools-sect{
+		
+		.classroom-tools-ul1{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 25%;
+		}
+
+		.classroom-tools-ul2{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25%;
+		}
+
+		li{
+			
+			display: block;
+			
+			button{
+				background-color: $op-blue;
+				border: 1px solid $op-red;
+				color: #fff;
+				font-size: 1.6em;
+				font-weight: 400;
+				margin: 3%;
+				@include text-shadow( -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000 );
+				width: 100%;
+
+				&:hover{
+					background-color: $op-darkblue;
+					color: $op-black;
+					@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+				}
+			}
+			
+
+		}//end li
+	}//end classtools sect
+
+}//end classaswhole sect
+
+//ADD NEW STUDENT SECT
+.add-new-student-sect{
+	margin-top: 4em;
+
+	input{
+		border-radius: 5px;
+		color: $op-black;
+		font-size: 2em;
+		height: auto;
+		padding: .5em;
+		vertical-align: middle;
+		width: 50%;
+		
+	}
+
+	button{
+		
+		background-color: $op-red;
+		border: 1px solid $op-lightblue;
+		color: #fff;
+		font-family: "opfont";
+		font-size: 2em;
+		height: auto;
+		margin-left: .1em;
+		padding: .48em;
+		vertical-align: middle;
+		width: 10%;
+
+		&:hover{
+			background-color: $op-darkred;
+			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+		}
+	}
+}
+
+//STUDENT SECTION
+
+.student-list{
+	margin-top: 4em;
+}
+
+//WORK ON STYLING INDIV STUDENTS AND BUTTONS NEWXT FAGGOTTKGDNKFSDO MEEEEEEE
+
+//INDIV STUDENT
+
+.indivStudent{
+	
+	float: none;
+	vertical-align: top;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 16%;
+	margin-left: 1%;
+	margin-right: 1%;
+
+	&:hover{
+		.student-img{
+			@extend .shakeIt;
+		}
+	}
+	//remmeber to add media queries for indiv studnet width so they display in colmuns of three and two
+	
+	
+	.indiv-student-label{
+		background-color: $op-darkred;
+		border-radius: 5%;
+		color: #fff;
+		font-size: 3em;
+		margin-top: 1em;
+		@include text-shadow( -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000 );
+
+			.studentName{
+				font-family: "opfont";
+
+			}
+
+			.hWPoints{
+				font-family: "opfont";
+				font-size: .9em;
+			}
+	}
+
+	.studentSubMenu{
+
+		li{
+			
+			display: inline-block;
+			
+			button{
+				background-color: #B80C09;
+		    border: 1px solid #46b8da;
+		    box-sizing: border-box;
+		    color: #fff;
+				font-size: 1.5em;
+
+				&:hover{
+					background-color: $op-darkred;
+					color: $op-black;
+					@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+				}
+			}	
+		}
+	}
+
+	.student-img{
+
+		border-radius: 50%;
+		margin-bottom: 1em;
+		
+	}
+
+}
+
+//KEYFRAME SHAKEIT
+
+@include keyframes( shakeit ){
+	0% { transform: translate(5px, 4px) rotate(0deg); }
+  10% { transform: translate(-6px, -4px) rotate(-3deg); }
+  20% { transform: translate(-4px, 1px) rotate(5deg); }
+  30% { transform: translate(1px, 3px) rotate(3deg); }
+  40% { transform: translate(2px, -2px) rotate(-4deg); }
+  50% { transform: translate(-6px, 7px) rotate(-2deg); }
+  60% { transform: translate(-8px, 2px) rotate(1deg); }
+  70% { transform: translate(-2px, 2px) rotate(-6deg); }
+  80% { transform: translate(-2px, -2px) rotate(5deg); }
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shakeIt{
+	@include animation( "shakeit .1s linear infinite");
+}
+
+//TO DO FIX UP ALL COLORS BUT FIREST FDO THE MODALS CLASS REFELCTION  COHOOSE VOLUNTEER STUDENT NOTES CHANGE NAME 
+
+//MODAL STUDENT NAME CHANGE 
+
+.modal-student-name-change{
+			
+	.modal-header{
+		background-color: $op-darkred;
+
+		h3{
+			color: $op-red;
+			font-family: "opfont";
+			font-size: 4em;
+			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+		}		
+
+	}
+
+	.modal-body{
+		background-color: $bg-white;
+		color: $op-black;
+		font-size: 3em;
+	}
+
+	.modal-footer{
+		background-color: $bg-white;
+
+		.btn{
+				background-color: $op-blue;
+				border: 1px solid $op-blue;
+				color: #fff;
+				font-family: "opfont";
+				font-size: 4em;
+				padding: .1em;
+
+				&:hover{
+					background-color: $op-darkblue;
+				}
+		}
+	}
+
+}
+
+//MODAL STUDENT NOTES
+
+.modal-student-notes{
+	
+	.modal-header{
+		background-color: $op-black;
+
+		button{
+			color: #fff;
+		}
+
+		img{
+			border-radius: 50%;
+			width: 50%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		h2{
+			color: $op-red;
+			font-family: "opfont";
+			font-size: 3em;
+
+			span{
+				font-family: "opfont";
+			}
+		}
+
+	}
+
+	.modal-body{
+		background-color: $bg-white;
+		
+		.past-students-notes-list{
+			font-size: 1.5em;	
+
+			li{
+				margin-top: 1%;
+				margin-bottom: 1%;
+				position: relative;
+			}
+
+			li:nth-child( odd ){
+				background-color: darken( $bg-white, 10% );
+			}
+
+			li:nth-child( even ){
+				background-color: darken( $bg-white, 15% );
+			}
+
+			button{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			span{
+
+				display: block;
+				font-size: .8em;
+				opacity: .7;
+
+			}
+
+		}
+
+	}
+
+	.modal-footer{
+		background-color: $bg-white;
+		
+		textarea{
+			width: 100%;
+			color: $op-black;
+			font-size: 1.8em;
+		}
+
+		button{
+			background-color: $op-blue;
+			border: 1px solid $op-blue;
+			color: #fff;
+			font-family: "opfont";
+			font-size: 3em;
+			padding: .1em;
+
+			&:hover{
+				background-color: $op-darkblue;
+			}
+		}
+	}
+
+}
+
+//MODAL CHOOSE VOLUNTEER
+
+.modal-choose-volunteer{
+
+	.modal-header{
+		background-color: $op-black;
+
+		button{
+			color: #fff;
+
+		}
+
+		h2{
+			color: $op-red;
+			font-family: "opfont";
+			font-size: 6em;
+			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+		}		
+	}
+
+	.modal-body{
+		background-color: $op-darkred;
+
+		img{
+			border-radius: 50%;
+			margin-right: auto;
+			margin-left: auto;
+			width: 70%;
+
+		}
+		
+	}
+
+	.modal-footer{
+		background-color: $bg-white;
+
+			button{
+				background-color: $op-blue;
+				border: 1px solid $op-blue;
+				color: #fff;
+				font-family: "opfont";
+				font-size: 3em;
+				padding: .1em;
+
+				&:hover{
+					background-color: $op-darkblue;
+				}
+			}
+	}
+
+}
+
+//CHOOSE VOLUNTEER OP GIF SECT
+
+.volunteer-op-gif-sect{
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+//FLASH CLASS
+
+.opFlash{
+	@include animation( "flash .1s infinite linear" );
+}
+//KEYFRAMES FLASH 
+
+@include keyframes( flash ){
+	
+	0%{
+     background-color: #790400;
+ 	}
+
+ 	100%{
+     background-color: #100B00;
+ 	}
+}
+
+//CLASS EVO SECT
+.class-evo-sect{
+	img{
+		border-radius: 50%;
+		margin: auto;
+	}
+
+	.evo-msg{
+		background-color: $op-darkred;
+		color: $op-black;
+		font-size: 5em;
+		margin-top: 7%;
+		text-align: center;
+		@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
+		
+	}
+}
+
+//GROWSHRINK CLASS
+
+.growshrink{
+	@include animation( "growshrink .7s infinite linear" );
+
+}
+
+// KEYFRAMES GROWSHRINK
+
+@include keyframes( growshrink ){
+	
+	0%{
+     transform: scale(.5);
+ 	}
+
+ 	50%{
+ 		transform: scale(1.1);
+ 	}
+
+ 	100%{
+     transform: scale(.5);
+ 	}
+}
+
+//EVO BACKGROUND FLASH CLASS
+.evo-bg-flash{
+	@include animation( "bgflash .3s infinite linear");
+}
+
+//KEYFRAMES EVO BG FLASH
+
+@include keyframes( bgflash ){
+	
+	0%{
+     background-color: #ffffff;
+ 	}
+
+ 	100%{
+     background-color: #100B00;
+ 	}
+}
+
+
+//MODAL CLASS REFLECTIONS
+
+.modal-class-reflections{
+
+	.modal-header{
+		background-color: $op-blue;
+
+		button{
+			color: #fff;
+		}
+
+		img{
+			border-radius: 50%;
+			width: 70%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		h2{
+			font-family: "opfont";
+			font-size: 3em;
+		}
+
+	}
+
+	.modal-body{
+		background-color: $bg-white;
+		
+		.past-reflections-list{
+			font-size: 1.5em;	
+
+			li{
+				margin-top: 1%;
+				margin-bottom: 1%;
+				position: relative;
+			}
+
+			li:nth-child( odd ){
+				background-color: darken( $bg-white, 10% );
+			}
+
+			li:nth-child( even ){
+				background-color: darken( $bg-white, 15% );
+			}
+
+			button{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			span{
+
+				display: block;
+				font-size: .8em;
+				opacity: .7;
+
+			}
+
+		}
+	}
+
+	.modal-footer{
+		background-color: $bg-white;
+		
+		textarea{
+			width: 100%;
+			color: $op-black;
+			font-size: 1.8em;
+		}
+
+		button{
+			background-color: $op-blue;
+			border: 1px solid $op-blue;
+			color: #fff;
+			font-family: "opfont";
+			font-size: 3em;
+			padding: .1em;
+
+			&:hover{
+				background-color: $op-darkblue;
+			}
+		}
+	}
+
+
+}
+
+//TWITTER SECTION
+
+.twitter-section{
+	
+	position: relative;
+	text-align: left;
+	
+	.close-twitter-section-btn{
+		border: none;
+		font-size: 2em;	
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.tweet-icon{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		width: 15%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+	.indiv-tweet-li{
+			
+			margin-top: 2%;
+			margin-bottom: 2%;
+			padding: 2%;
+
+
+			h4{
+				font-size: 1.5em;
+			}
+
+			h5{
+				font-size: 1.1em;
+				
+				img{
+					border-radius: 50%;
+				}
+			}
+			
+			&:nth-child( odd ){
+				background-color: darken( $bg-white, 10% );
+			}
+
+			&:nth-child( even ){
+				background-color: darken( $bg-white, 15% );
+			}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and ( max-width: 1000px ) {
+    /* Style adjustments for viewports that meet the condition */
+  .class-as-whole-sect{
+
+		.classroom-tools-sect{	
+
+			li{
+				
+				button{
+					font-size: 1.2em;
+				}
+				
+			}//end li
+		}//end classtools sect
+
+	}//end classaswhole sect
+
+	.indivStudent{
+	
+		width: 27%;
+		margin-left: 1%;
+		margin-right: 1%;
+
+
+		//remmeber to add media queries for indiv studnet width so they display in colmuns of three and two
+		
+		
+		.indiv-student-label{
+			
+			font-size: 2em;
+			
+		}
+
+		.studentSubMenu{
+
+			li{
+				
+				button{
+					
+					font-size: 1em;
+					
+				}	
+			}
+		}
+
+	}
+
+
+}
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
