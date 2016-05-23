@@ -105,7 +105,7 @@ textarea {
 //DEFAULTS
 
 *{
-	font-family: Impact, Charcoal, sans-serif;
+	font-family: "Roboto Slab", Impact, Charcoal, sans-serif;
 }
 
 ul{
@@ -1038,6 +1038,54 @@ a, button{
 	}
 
 
+}
+
+@media only screen and ( max-width: 600px ) {
+	
+	.class-as-whole-sect{
+
+		.classroom-tools-sect{	
+
+			li{
+				
+				button{
+					font-size: .9em;
+				}
+				
+			}//end li
+		}//end classtools sect
+
+	}//end classaswhole sect
+
+	.indivStudent{
+	
+		width: 27%;
+		margin-left: 1%;
+		margin-right: 1%;
+
+
+		//remmeber to add media queries for indiv studnet width so they display in colmuns of three and two
+		
+		
+		.indiv-student-label{
+			
+			font-size: 1.7em;
+			
+		}
+
+		.studentSubMenu{
+
+			li{
+				
+				button{
+					
+					font-size: .8em;
+					
+				}	
+			}
+		}
+
+	}
 }
 
 
