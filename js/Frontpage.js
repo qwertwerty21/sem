@@ -704,6 +704,7 @@
 					$( "#volunteerOPGifSect" ).addClass( "hidden" );
 					$( ".container-fluid" ).show();
 					$( ".container-fluid" ).addClass( "shakeIt" );
+					$( ".btn" ).prop( "disabled", true );
 				}, 10000 );
 
 				setTimeout( function(){
@@ -711,6 +712,7 @@
 					bgmPlayer.currentTime = 0;
 					FrontPage.chooseAndShowVolunteerModal();
 					$( ".container-fluid" ).removeClass( "shakeIt" );
+					$( ".btn" ).prop( "disabled", false );
 				}, 13300 );
 
 				
