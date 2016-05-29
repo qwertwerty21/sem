@@ -220,7 +220,9 @@ a, button{
 
 	}
 
-	//MODAL CREATE CLASS STYLE
+}
+
+//MODAL CREATE CLASS STYLE
 
 	.modal-create-class{
 
@@ -239,6 +241,11 @@ a, button{
 			background-color: $bg-white;
 			color: $op-black;
 			font-size: 1.3em;
+			text-align: center;
+
+			.form-group{
+				margin-bottom: 1em;
+			}
 			
 			label{
 				font-size: 1.7em;
@@ -258,12 +265,22 @@ a, button{
 
 		.modal-footer{
 			background-color: $bg-white;
+
+			.btn{
+				background-color: $op-blue;
+				border: 1px solid $op-blue;
+				color: #fff;
+				font-family: "opfont";
+				font-size: 4em;
+				padding: .1em;
+
+				&:hover{
+					background-color: $op-darkblue;
+				}
+			}
 		}
 		
 	}
-
-}
-
 //CLASSROOM VIEW STYLE
 
 .classroom-view-sect{

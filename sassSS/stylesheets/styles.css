@@ -677,54 +677,73 @@ a, button {
   font-size: 3em;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 227, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-header {
+
+/* line 229, ../sass/styles.scss */
+.modal-create-class .modal-header {
   background-color: #790400;
 }
-/* line 230, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-header h3 {
+/* line 232, ../sass/styles.scss */
+.modal-create-class .modal-header h3 {
   color: #B80C09;
   font-family: "opfont";
   font-size: 4em;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 238, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-body {
+/* line 240, ../sass/styles.scss */
+.modal-create-class .modal-body {
   background-color: #efefef;
   color: #100B00;
   font-size: 1.3em;
+  text-align: center;
 }
-/* line 243, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-body label {
+/* line 246, ../sass/styles.scss */
+.modal-create-class .modal-body .form-group {
+  margin-bottom: 1em;
+}
+/* line 250, ../sass/styles.scss */
+.modal-create-class .modal-body label {
   font-size: 1.7em;
 }
-/* line 247, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-body input {
+/* line 254, ../sass/styles.scss */
+.modal-create-class .modal-body input {
   margin-left: .2em;
   padding: .6em;
 }
-/* line 252, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-body select {
+/* line 259, ../sass/styles.scss */
+.modal-create-class .modal-body select {
   margin-left: .2em;
   margin-right: 1em;
   padding: .6em;
 }
-/* line 259, ../sass/styles.scss */
-.front-page-form .modal-create-class .modal-footer {
+/* line 266, ../sass/styles.scss */
+.modal-create-class .modal-footer {
   background-color: #efefef;
 }
+/* line 269, ../sass/styles.scss */
+.modal-create-class .modal-footer .btn {
+  background-color: #337ab7;
+  border: 1px solid #337ab7;
+  color: #fff;
+  font-family: "opfont";
+  font-size: 4em;
+  padding: .1em;
+}
+/* line 277, ../sass/styles.scss */
+.modal-create-class .modal-footer .btn:hover {
+  background-color: #286192;
+}
 
-/* line 271, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .classroom-view-sect h2 {
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 275, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 .classroom-view-sect h2 .classroom-header-html {
   color: #B80C09;
   font-family: "opfont";
   font-size: 3em;
 }
-/* line 281, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 .classroom-view-sect h2 .class-level-html {
   color: #100B00;
   font-family: "opfont";
@@ -732,41 +751,41 @@ a, button {
   margin-left: .1em;
 }
 
-/* line 294, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 .class-as-whole-sect {
   position: relative;
 }
-/* line 298, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
 .class-as-whole-sect .class-as-whole-img {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
   width: 35%;
 }
-/* line 305, ../sass/styles.scss */
+/* line 322, ../sass/styles.scss */
 .class-as-whole-sect .lvl-to-next-evo-header {
   color: #100B00;
   font-size: 1.5em;
 }
-/* line 313, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 .class-as-whole-sect .classroom-tools-sect .classroom-tools-ul1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 25%;
 }
-/* line 320, ../sass/styles.scss */
+/* line 337, ../sass/styles.scss */
 .class-as-whole-sect .classroom-tools-sect .classroom-tools-ul2 {
   position: absolute;
   top: 0;
   right: 0;
   width: 25%;
 }
-/* line 327, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 .class-as-whole-sect .classroom-tools-sect li {
   display: block;
 }
-/* line 331, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 .class-as-whole-sect .classroom-tools-sect li button {
   background-color: #337ab7;
   border: 1px solid #B80C09;
@@ -777,18 +796,18 @@ a, button {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   width: 100%;
 }
-/* line 341, ../sass/styles.scss */
+/* line 358, ../sass/styles.scss */
 .class-as-whole-sect .classroom-tools-sect li button:hover {
   background-color: #286192;
   color: #100B00;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-/* line 355, ../sass/styles.scss */
+/* line 372, ../sass/styles.scss */
 .add-new-student-sect {
   margin-top: 4em;
 }
-/* line 358, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 .add-new-student-sect input {
   border-radius: 5px;
   color: #100B00;
@@ -798,7 +817,7 @@ a, button {
   vertical-align: middle;
   width: 50%;
 }
-/* line 369, ../sass/styles.scss */
+/* line 386, ../sass/styles.scss */
 .add-new-student-sect button {
   background-color: #B80C09;
   border: 1px solid #46b8da;
@@ -811,18 +830,18 @@ a, button {
   vertical-align: middle;
   width: 10%;
 }
-/* line 382, ../sass/styles.scss */
+/* line 399, ../sass/styles.scss */
 .add-new-student-sect button:hover {
   background-color: #790400;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-/* line 391, ../sass/styles.scss */
+/* line 408, ../sass/styles.scss */
 .student-list {
   margin-top: 4em;
 }
 
-/* line 399, ../sass/styles.scss */
+/* line 416, ../sass/styles.scss */
 .indivStudent {
   float: none;
   vertical-align: top;
@@ -832,7 +851,7 @@ a, button {
   margin-left: 1%;
   margin-right: 1%;
 }
-/* line 417, ../sass/styles.scss */
+/* line 434, ../sass/styles.scss */
 .indivStudent .indiv-student-label {
   background-color: #790400;
   border-radius: 5%;
@@ -841,20 +860,20 @@ a, button {
   margin-top: 1em;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
-/* line 425, ../sass/styles.scss */
+/* line 442, ../sass/styles.scss */
 .indivStudent .indiv-student-label .studentName {
   font-family: "opfont";
 }
-/* line 430, ../sass/styles.scss */
+/* line 447, ../sass/styles.scss */
 .indivStudent .indiv-student-label .hWPoints {
   font-family: "opfont";
   font-size: .9em;
 }
-/* line 438, ../sass/styles.scss */
+/* line 455, ../sass/styles.scss */
 .indivStudent .studentSubMenu li {
   display: inline-block;
 }
-/* line 442, ../sass/styles.scss */
+/* line 459, ../sass/styles.scss */
 .indivStudent .studentSubMenu li button {
   background-color: #B80C09;
   border: 1px solid #46b8da;
@@ -862,13 +881,13 @@ a, button {
   color: #fff;
   font-size: 1.5em;
 }
-/* line 449, ../sass/styles.scss */
+/* line 466, ../sass/styles.scss */
 .indivStudent .studentSubMenu li button:hover {
   background-color: #790400;
   color: #100B00;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 458, ../sass/styles.scss */
+/* line 475, ../sass/styles.scss */
 .indivStudent .student-img {
   border-radius: 50%;
   margin-bottom: 1em;
@@ -1014,7 +1033,7 @@ a, button {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-/* line 483, ../sass/styles.scss */
+/* line 500, ../sass/styles.scss */
 .shakeIt, .indivStudent:hover .student-img {
   -webkit-animation: shakeit .1s linear infinite;
   -moz-animation: shakeit .1s linear infinite;
@@ -1022,28 +1041,28 @@ a, button {
   animation: shakeit .1s linear infinite;
 }
 
-/* line 493, ../sass/styles.scss */
+/* line 510, ../sass/styles.scss */
 .modal-student-name-change .modal-header {
   background-color: #790400;
 }
-/* line 496, ../sass/styles.scss */
+/* line 513, ../sass/styles.scss */
 .modal-student-name-change .modal-header h3 {
   color: #B80C09;
   font-family: "opfont";
   font-size: 4em;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 505, ../sass/styles.scss */
+/* line 522, ../sass/styles.scss */
 .modal-student-name-change .modal-body {
   background-color: #efefef;
   color: #100B00;
   font-size: 3em;
 }
-/* line 511, ../sass/styles.scss */
+/* line 528, ../sass/styles.scss */
 .modal-student-name-change .modal-footer {
   background-color: #efefef;
 }
-/* line 514, ../sass/styles.scss */
+/* line 531, ../sass/styles.scss */
 .modal-student-name-change .modal-footer .btn {
   background-color: #337ab7;
   border: 1px solid #337ab7;
@@ -1052,81 +1071,81 @@ a, button {
   font-size: 4em;
   padding: .1em;
 }
-/* line 522, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 .modal-student-name-change .modal-footer .btn:hover {
   background-color: #286192;
 }
 
-/* line 534, ../sass/styles.scss */
+/* line 551, ../sass/styles.scss */
 .modal-student-notes .modal-header {
   background-color: #100B00;
 }
-/* line 537, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 .modal-student-notes .modal-header button {
   color: #fff;
 }
-/* line 541, ../sass/styles.scss */
+/* line 558, ../sass/styles.scss */
 .modal-student-notes .modal-header img {
   border-radius: 50%;
   width: 50%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 548, ../sass/styles.scss */
+/* line 565, ../sass/styles.scss */
 .modal-student-notes .modal-header h2 {
   color: #B80C09;
   font-family: "opfont";
   font-size: 3em;
 }
-/* line 553, ../sass/styles.scss */
+/* line 570, ../sass/styles.scss */
 .modal-student-notes .modal-header h2 span {
   font-family: "opfont";
 }
-/* line 560, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 .modal-student-notes .modal-body {
   background-color: #efefef;
 }
-/* line 563, ../sass/styles.scss */
+/* line 580, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list {
   font-size: 1.5em;
 }
-/* line 566, ../sass/styles.scss */
+/* line 583, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list li {
   margin-top: 1%;
   margin-bottom: 1%;
   position: relative;
 }
-/* line 572, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list li:nth-child(odd) {
   background-color: #d6d6d6;
 }
-/* line 576, ../sass/styles.scss */
+/* line 593, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list li:nth-child(even) {
   background-color: #c9c9c9;
 }
-/* line 580, ../sass/styles.scss */
+/* line 597, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list button {
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 586, ../sass/styles.scss */
+/* line 603, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list span {
   display: block;
   font-size: .8em;
   opacity: .7;
 }
-/* line 598, ../sass/styles.scss */
+/* line 615, ../sass/styles.scss */
 .modal-student-notes .modal-footer {
   background-color: #efefef;
 }
-/* line 601, ../sass/styles.scss */
+/* line 618, ../sass/styles.scss */
 .modal-student-notes .modal-footer textarea {
   width: 100%;
   color: #100B00;
   font-size: 1.8em;
 }
-/* line 607, ../sass/styles.scss */
+/* line 624, ../sass/styles.scss */
 .modal-student-notes .modal-footer button {
   background-color: #337ab7;
   border: 1px solid #337ab7;
@@ -1135,42 +1154,42 @@ a, button {
   font-size: 3em;
   padding: .1em;
 }
-/* line 615, ../sass/styles.scss */
+/* line 632, ../sass/styles.scss */
 .modal-student-notes .modal-footer button:hover {
   background-color: #286192;
 }
 
-/* line 627, ../sass/styles.scss */
+/* line 644, ../sass/styles.scss */
 .modal-choose-volunteer .modal-header {
   background-color: #100B00;
 }
-/* line 630, ../sass/styles.scss */
+/* line 647, ../sass/styles.scss */
 .modal-choose-volunteer .modal-header button {
   color: #fff;
 }
-/* line 635, ../sass/styles.scss */
+/* line 652, ../sass/styles.scss */
 .modal-choose-volunteer .modal-header h2 {
   color: #B80C09;
   font-family: "opfont";
   font-size: 6em;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 643, ../sass/styles.scss */
+/* line 660, ../sass/styles.scss */
 .modal-choose-volunteer .modal-body {
   background-color: #790400;
 }
-/* line 646, ../sass/styles.scss */
+/* line 663, ../sass/styles.scss */
 .modal-choose-volunteer .modal-body img {
   border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
   width: 70%;
 }
-/* line 656, ../sass/styles.scss */
+/* line 673, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer {
   background-color: #efefef;
 }
-/* line 659, ../sass/styles.scss */
+/* line 676, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer button {
   background-color: #337ab7;
   border: 1px solid #337ab7;
@@ -1179,18 +1198,18 @@ a, button {
   font-size: 3em;
   padding: .1em;
 }
-/* line 667, ../sass/styles.scss */
+/* line 684, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer button:hover {
   background-color: #286192;
 }
 
-/* line 678, ../sass/styles.scss */
+/* line 695, ../sass/styles.scss */
 .volunteer-op-gif-sect img {
   display: block;
   width: 100%;
 }
 
-/* line 685, ../sass/styles.scss */
+/* line 702, ../sass/styles.scss */
 .opFlash {
   -webkit-animation: flash .1s infinite linear;
   -moz-animation: flash .1s infinite linear;
@@ -1230,12 +1249,12 @@ a, button {
     background-color: #100B00;
   }
 }
-/* line 703, ../sass/styles.scss */
+/* line 720, ../sass/styles.scss */
 .class-evo-sect img {
   border-radius: 50%;
   margin: auto;
 }
-/* line 708, ../sass/styles.scss */
+/* line 725, ../sass/styles.scss */
 .class-evo-sect .evo-msg {
   background-color: #790400;
   color: #100B00;
@@ -1245,7 +1264,7 @@ a, button {
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-/* line 721, ../sass/styles.scss */
+/* line 738, ../sass/styles.scss */
 .growshrink {
   -webkit-animation: growshrink .7s infinite linear;
   -moz-animation: growshrink .7s infinite linear;
@@ -1297,7 +1316,7 @@ a, button {
     transform: scale(0.5);
   }
 }
-/* line 744, ../sass/styles.scss */
+/* line 761, ../sass/styles.scss */
 .evo-bg-flash {
   -webkit-animation: bgflash .3s infinite linear;
   -moz-animation: bgflash .3s infinite linear;
@@ -1337,71 +1356,71 @@ a, button {
     background-color: #100B00;
   }
 }
-/* line 766, ../sass/styles.scss */
+/* line 783, ../sass/styles.scss */
 .modal-class-reflections .modal-header {
   background-color: #337ab7;
 }
-/* line 769, ../sass/styles.scss */
+/* line 786, ../sass/styles.scss */
 .modal-class-reflections .modal-header button {
   color: #fff;
 }
-/* line 773, ../sass/styles.scss */
+/* line 790, ../sass/styles.scss */
 .modal-class-reflections .modal-header img {
   border-radius: 50%;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 780, ../sass/styles.scss */
+/* line 797, ../sass/styles.scss */
 .modal-class-reflections .modal-header h2 {
   font-family: "opfont";
   font-size: 3em;
 }
-/* line 787, ../sass/styles.scss */
+/* line 804, ../sass/styles.scss */
 .modal-class-reflections .modal-body {
   background-color: #efefef;
 }
-/* line 790, ../sass/styles.scss */
+/* line 807, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list {
   font-size: 1.5em;
 }
-/* line 793, ../sass/styles.scss */
+/* line 810, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li {
   margin-top: 1%;
   margin-bottom: 1%;
   position: relative;
 }
-/* line 799, ../sass/styles.scss */
+/* line 816, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li:nth-child(odd) {
   background-color: #d6d6d6;
 }
-/* line 803, ../sass/styles.scss */
+/* line 820, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li:nth-child(even) {
   background-color: #c9c9c9;
 }
-/* line 807, ../sass/styles.scss */
+/* line 824, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list button {
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 813, ../sass/styles.scss */
+/* line 830, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list span {
   display: block;
   font-size: .8em;
   opacity: .7;
 }
-/* line 824, ../sass/styles.scss */
+/* line 841, ../sass/styles.scss */
 .modal-class-reflections .modal-footer {
   background-color: #efefef;
 }
-/* line 827, ../sass/styles.scss */
+/* line 844, ../sass/styles.scss */
 .modal-class-reflections .modal-footer textarea {
   width: 100%;
   color: #100B00;
   font-size: 1.8em;
 }
-/* line 833, ../sass/styles.scss */
+/* line 850, ../sass/styles.scss */
 .modal-class-reflections .modal-footer button {
   background-color: #337ab7;
   border: 1px solid #337ab7;
@@ -1410,17 +1429,17 @@ a, button {
   font-size: 3em;
   padding: .1em;
 }
-/* line 841, ../sass/styles.scss */
+/* line 858, ../sass/styles.scss */
 .modal-class-reflections .modal-footer button:hover {
   background-color: #286192;
 }
 
-/* line 852, ../sass/styles.scss */
+/* line 869, ../sass/styles.scss */
 .twitter-section {
   position: relative;
   text-align: left;
 }
-/* line 857, ../sass/styles.scss */
+/* line 874, ../sass/styles.scss */
 .twitter-section .close-twitter-section-btn {
   border: none;
   font-size: 2em;
@@ -1428,7 +1447,7 @@ a, button {
   top: 0;
   right: 0;
 }
-/* line 865, ../sass/styles.scss */
+/* line 882, ../sass/styles.scss */
 .twitter-section .tweet-icon {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -1436,29 +1455,29 @@ a, button {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 874, ../sass/styles.scss */
+/* line 891, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li {
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 2%;
 }
-/* line 881, ../sass/styles.scss */
+/* line 898, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li h4 {
   font-size: 1.5em;
 }
-/* line 885, ../sass/styles.scss */
+/* line 902, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li h5 {
   font-size: 1.1em;
 }
-/* line 888, ../sass/styles.scss */
+/* line 905, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li h5 img {
   border-radius: 50%;
 }
-/* line 893, ../sass/styles.scss */
+/* line 910, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li:nth-child(odd) {
   background-color: #d6d6d6;
 }
-/* line 897, ../sass/styles.scss */
+/* line 914, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li:nth-child(even) {
   background-color: #c9c9c9;
 }
@@ -1469,7 +1488,7 @@ a, button {
 /*
  * Hide visually and from screen readers:
  */
-/* line 921, ../sass/styles.scss */
+/* line 938, ../sass/styles.scss */
 .hidden {
   display: none !important;
 }
@@ -1478,7 +1497,7 @@ a, button {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 930, ../sass/styles.scss */
+/* line 947, ../sass/styles.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1495,7 +1514,7 @@ a, button {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 947, ../sass/styles.scss */
+/* line 964, ../sass/styles.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1509,7 +1528,7 @@ a, button {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 961, ../sass/styles.scss */
+/* line 978, ../sass/styles.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1525,7 +1544,7 @@ a, button {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 977, ../sass/styles.scss */
+/* line 994, ../sass/styles.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1534,7 +1553,7 @@ a, button {
   /* 2 */
 }
 
-/* line 983, ../sass/styles.scss */
+/* line 1000, ../sass/styles.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1546,43 +1565,43 @@ a, button {
    ========================================================================== */
 @media only screen and (max-width: 1000px) {
   /* Style adjustments for viewports that meet the condition */
-  /* line 1001, ../sass/styles.scss */
+  /* line 1018, ../sass/styles.scss */
   .class-as-whole-sect .classroom-tools-sect li button {
     font-size: 1.2em;
   }
 
-  /* line 1010, ../sass/styles.scss */
+  /* line 1027, ../sass/styles.scss */
   .indivStudent {
     width: 27%;
     margin-left: 1%;
     margin-right: 1%;
   }
-  /* line 1020, ../sass/styles.scss */
+  /* line 1037, ../sass/styles.scss */
   .indivStudent .indiv-student-label {
     font-size: 2em;
   }
-  /* line 1030, ../sass/styles.scss */
+  /* line 1047, ../sass/styles.scss */
   .indivStudent .studentSubMenu li button {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 1051, ../sass/styles.scss */
+  /* line 1068, ../sass/styles.scss */
   .class-as-whole-sect .classroom-tools-sect li button {
     font-size: .9em;
   }
 
-  /* line 1060, ../sass/styles.scss */
+  /* line 1077, ../sass/styles.scss */
   .indivStudent {
     width: 27%;
     margin-left: 1%;
     margin-right: 1%;
   }
-  /* line 1070, ../sass/styles.scss */
+  /* line 1087, ../sass/styles.scss */
   .indivStudent .indiv-student-label {
     font-size: 1.7em;
   }
-  /* line 1080, ../sass/styles.scss */
+  /* line 1097, ../sass/styles.scss */
   .indivStudent .studentSubMenu li button {
     font-size: .8em;
   }
@@ -1596,7 +1615,7 @@ a, button {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 1107, ../sass/styles.scss */
+  /* line 1124, ../sass/styles.scss */
   *,
   *:before,
   *:after {
@@ -1608,18 +1627,18 @@ a, button {
     text-shadow: none !important;
   }
 
-  /* line 1117, ../sass/styles.scss */
+  /* line 1134, ../sass/styles.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1122, ../sass/styles.scss */
+  /* line 1139, ../sass/styles.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1126, ../sass/styles.scss */
+  /* line 1143, ../sass/styles.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1628,13 +1647,13 @@ a, button {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 1135, ../sass/styles.scss */
+  /* line 1152, ../sass/styles.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 1140, ../sass/styles.scss */
+  /* line 1157, ../sass/styles.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -1645,23 +1664,23 @@ a, button {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 1151, ../sass/styles.scss */
+  /* line 1168, ../sass/styles.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 1155, ../sass/styles.scss */
+  /* line 1172, ../sass/styles.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1160, ../sass/styles.scss */
+  /* line 1177, ../sass/styles.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 1164, ../sass/styles.scss */
+  /* line 1181, ../sass/styles.scss */
   p,
   h2,
   h3 {
@@ -1669,7 +1688,7 @@ a, button {
     widows: 3;
   }
 
-  /* line 1171, ../sass/styles.scss */
+  /* line 1188, ../sass/styles.scss */
   h2,
   h3 {
     page-break-after: avoid;

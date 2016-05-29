@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
-    <meta name="description" content="">
+    <meta name="description" content="ONE PUUNNNCCHHHH! A classroom management and homework tracking tool for a new breed of Hero~">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -286,7 +286,20 @@
                                     <button type="button" id="frontpgMakeNewClassroom" class="btn btn-block">Create Classroom</button>
                                 </div>
 
-                                <div id="modalCreateClass" class="modal fade modal-create-class" role="dialog">
+                                
+
+                        <!--TO DO  
+                            RECONSIDER LABEL FOR CHOOSE EXISTING CLASSROOM LAYOUT 
+                            MAkE A CLASSROOM CONSTRUCTOR FUNCTION 
+                            REFINE CREATE CLSS MODAL 
+                            KEEP WORKING ON THE FRONT PAGE OBJECT 
+                            IE WHAT HAPPANES WHEN THE MAKE BUTTON IS PRESSED?
+
+                        -->
+                    </div>
+                </form>
+
+                <div id="modalCreateClass" class="modal fade modal-create-class" role="dialog">
                                     <div class="modal-dialog">
                                         <!--Actual modal content-->
                                         <div class="modal-content">
@@ -342,28 +355,18 @@
 
                                     </div>
                                 </div>
-
-                        <!--TO DO  
-                            RECONSIDER LABEL FOR CHOOSE EXISTING CLASSROOM LAYOUT 
-                            MAkE A CLASSROOM CONSTRUCTOR FUNCTION 
-                            REFINE CREATE CLSS MODAL 
-                            KEEP WORKING ON THE FRONT PAGE OBJECT 
-                            IE WHAT HAPPANES WHEN THE MAKE BUTTON IS PRESSED?
-
-                        -->
-                    </div>
-                </form>
             </div> <!--End of div#frontPageView-->
 
         </div> <!--End of div.container-fluid.col-sm-9-->
 
         <div id="twitterSection" class="col-sm-3 twitter-section">
             <button type="button" id="closeTwitterSectionBtn" class="close-twitter-section-btn clearfix">&times;</button>
+            <a href="https://twitter.com/hashtag/sunnyssaem?src=hash" target="_blank">
+                <img src="img/tweeticon3.png" alt="Twitter Icon" class="tweet-icon img-responsive">
+            </a>
             <ul class="tweetList tweet-list">
                 
-                <a href="https://twitter.com/hashtag/sunnyssaem?src=hash" target="_blank">
-                    <img src="img/tweeticon3.png" alt="Twitter Icon" class="tweet-icon img-responsive">
-                </a>
+                
                 
                 <script id="twitterTemplate" type="text/x-handlebars-template">
                     {{#each this}}
