@@ -653,6 +653,7 @@ a, button{
 			color: $op-red;
 			font-family: "opfont";
 			font-size: 6em;
+			letter-spacing: 2px;
 			@include text-shadow( -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff );
 		}		
 	}

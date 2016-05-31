@@ -166,43 +166,60 @@
 		},
 
 		addNewStudent: function(){
-			
-			$( "#addNewStudentBtn" ).on( "click", function(){
 				
-				var $newStudentName = $( "#addNewStudentName" );
-				var $newStudentNameVal = $( "#addNewStudentName" ).val();
+			var $newStudentName = $( "#addNewStudentName" );
+			var $newStudentNameVal = $( "#addNewStudentName" ).val();
 
-				$newStudentNameVal = FrontPage.checkAndReplaceForbiddenChar( $newStudentNameVal );
-				console.log( $newStudentNameVal );
+			$newStudentNameVal = FrontPage.checkAndReplaceForbiddenChar( $newStudentNameVal );
+			console.log( $newStudentNameVal );
 
-				if( !$newStudentNameVal ){
-					$newStudentName.focus();
-				}
+			if( !$newStudentNameVal ){
+				$newStudentName.focus();
+			}
 
-				else if( FrontPage.findStudentByNameInArrayOfClassrooms( $newStudentNameVal ).length > 0 ){
-					alert( "You already have a Student with that name in your Classroom! Add something so we can distinguish between the two! A middle initial, perhaps?" );
-					$newStudentName.focus();
-				}
+			else if( FrontPage.findStudentByNameInArrayOfClassrooms( $newStudentNameVal ).length > 0 ){
+				alert( "You already have a Student with that name in your Classroom! Add something so we can distinguish between the two! A middle initial, perhaps?" );
+				$newStudentName.focus();
+			}
 
-				else if( $newStudentNameVal !== "" && FrontPage.findStudentByNameInArrayOfClassrooms( $newStudentNameVal ).length === 0 ){
-					var newStudent = new Student( $newStudentNameVal );
+			else if( $newStudentNameVal !== "" && FrontPage.findStudentByNameInArrayOfClassrooms( $newStudentNameVal ).length === 0 ){
+				var newStudent = new Student( $newStudentNameVal );
 					
-					FrontPage.arrayOfClassrooms[currentClassroomIdNum].students.push( newStudent );
+				FrontPage.arrayOfClassrooms[currentClassroomIdNum].students.push( newStudent );
 				
-					FrontPage.handlebarStudentCompileDisplay();
+				FrontPage.handlebarStudentCompileDisplay();
 				
 
-					FrontPage.saveClassroomsToLocalStor();
-					$newStudentName.val( "" );
-					$newStudentName.focus();
+				FrontPage.saveClassroomsToLocalStor();
+				$newStudentName.val( "" );
+				$newStudentName.focus();
 
-				}
+			}
 				
 				//rememeber to add student to class student roster
 				//currentClassroom.students.push( newStudent );
 				//update jsonlocalstroage object
 				
+		},
+
+		onAddNewStudentBtnClick: function(){
+			$( "#addNewStudentBtn" ).on( "click", function(){
+				FrontPage.addNewStudent();
 			});
+		},
+
+		enterShortcutAddNewStudent: function(){
+			
+			$( window ).on( "keypress", function( e ){
+
+					
+				if( e.which === 13 && $( "#addNewStudentName" ).is( ":focus" ) ){
+					e.preventDefault();
+					FrontPage.addNewStudent();
+				}
+
+			});
+
 		},
 
 		checkAndReplaceForbiddenChar: function( string ){

@@ -23,7 +23,8 @@ $( document ).ready(function(){
 	FrontPage.showModalCreateClass();
 	FrontPage.modalMakeNewClassroom();
 	FrontPage.showArrayOfClassroomsAsOptions();
-	FrontPage.addNewStudent();
+	FrontPage.onAddNewStudentBtnClick();
+	FrontPage.enterShortcutAddNewStudent();
 	FrontPage.loadExistClassroom();
 	FrontPage.registerCurrentStudent();
 	

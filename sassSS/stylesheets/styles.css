@@ -1172,24 +1172,25 @@ a, button {
   color: #B80C09;
   font-family: "opfont";
   font-size: 6em;
+  letter-spacing: 2px;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-/* line 660, ../sass/styles.scss */
+/* line 661, ../sass/styles.scss */
 .modal-choose-volunteer .modal-body {
   background-color: #790400;
 }
-/* line 663, ../sass/styles.scss */
+/* line 664, ../sass/styles.scss */
 .modal-choose-volunteer .modal-body img {
   border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
   width: 70%;
 }
-/* line 673, ../sass/styles.scss */
+/* line 674, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer {
   background-color: #efefef;
 }
-/* line 676, ../sass/styles.scss */
+/* line 677, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer button {
   background-color: #337ab7;
   border: 1px solid #337ab7;
@@ -1198,18 +1199,18 @@ a, button {
   font-size: 3em;
   padding: .1em;
 }
-/* line 684, ../sass/styles.scss */
+/* line 685, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer button:hover {
   background-color: #286192;
 }
 
-/* line 695, ../sass/styles.scss */
+/* line 696, ../sass/styles.scss */
 .volunteer-op-gif-sect img {
   display: block;
   width: 100%;
 }
 
-/* line 702, ../sass/styles.scss */
+/* line 703, ../sass/styles.scss */
 .opFlash {
   -webkit-animation: flash .1s infinite linear;
   -moz-animation: flash .1s infinite linear;
@@ -1249,12 +1250,12 @@ a, button {
     background-color: #100B00;
   }
 }
-/* line 720, ../sass/styles.scss */
+/* line 721, ../sass/styles.scss */
 .class-evo-sect img {
   border-radius: 50%;
   margin: auto;
 }
-/* line 725, ../sass/styles.scss */
+/* line 726, ../sass/styles.scss */
 .class-evo-sect .evo-msg {
   background-color: #790400;
   color: #100B00;
@@ -1264,7 +1265,7 @@ a, button {
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-/* line 738, ../sass/styles.scss */
+/* line 739, ../sass/styles.scss */
 .growshrink {
   -webkit-animation: growshrink .7s infinite linear;
   -moz-animation: growshrink .7s infinite linear;
@@ -1316,7 +1317,7 @@ a, button {
     transform: scale(0.5);
   }
 }
-/* line 761, ../sass/styles.scss */
+/* line 762, ../sass/styles.scss */
 .evo-bg-flash {
   -webkit-animation: bgflash .3s infinite linear;
   -moz-animation: bgflash .3s infinite linear;
@@ -1356,71 +1357,71 @@ a, button {
     background-color: #100B00;
   }
 }
-/* line 783, ../sass/styles.scss */
+/* line 784, ../sass/styles.scss */
 .modal-class-reflections .modal-header {
   background-color: #337ab7;
 }
-/* line 786, ../sass/styles.scss */
+/* line 787, ../sass/styles.scss */
 .modal-class-reflections .modal-header button {
   color: #fff;
 }
-/* line 790, ../sass/styles.scss */
+/* line 791, ../sass/styles.scss */
 .modal-class-reflections .modal-header img {
   border-radius: 50%;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 797, ../sass/styles.scss */
+/* line 798, ../sass/styles.scss */
 .modal-class-reflections .modal-header h2 {
   font-family: "opfont";
   font-size: 3em;
 }
-/* line 804, ../sass/styles.scss */
+/* line 805, ../sass/styles.scss */
 .modal-class-reflections .modal-body {
   background-color: #efefef;
 }
-/* line 807, ../sass/styles.scss */
+/* line 808, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list {
   font-size: 1.5em;
 }
-/* line 810, ../sass/styles.scss */
+/* line 811, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li {
   margin-top: 1%;
   margin-bottom: 1%;
   position: relative;
 }
-/* line 816, ../sass/styles.scss */
+/* line 817, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li:nth-child(odd) {
   background-color: #d6d6d6;
 }
-/* line 820, ../sass/styles.scss */
+/* line 821, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li:nth-child(even) {
   background-color: #c9c9c9;
 }
-/* line 824, ../sass/styles.scss */
+/* line 825, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list button {
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 830, ../sass/styles.scss */
+/* line 831, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list span {
   display: block;
   font-size: .8em;
   opacity: .7;
 }
-/* line 841, ../sass/styles.scss */
+/* line 842, ../sass/styles.scss */
 .modal-class-reflections .modal-footer {
   background-color: #efefef;
 }
-/* line 844, ../sass/styles.scss */
+/* line 845, ../sass/styles.scss */
 .modal-class-reflections .modal-footer textarea {
   width: 100%;
   color: #100B00;
   font-size: 1.8em;
 }
-/* line 850, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 .modal-class-reflections .modal-footer button {
   background-color: #337ab7;
   border: 1px solid #337ab7;
@@ -1429,17 +1430,17 @@ a, button {
   font-size: 3em;
   padding: .1em;
 }
-/* line 858, ../sass/styles.scss */
+/* line 859, ../sass/styles.scss */
 .modal-class-reflections .modal-footer button:hover {
   background-color: #286192;
 }
 
-/* line 869, ../sass/styles.scss */
+/* line 870, ../sass/styles.scss */
 .twitter-section {
   position: relative;
   text-align: left;
 }
-/* line 874, ../sass/styles.scss */
+/* line 875, ../sass/styles.scss */
 .twitter-section .close-twitter-section-btn {
   border: none;
   font-size: 2em;
@@ -1447,7 +1448,7 @@ a, button {
   top: 0;
   right: 0;
 }
-/* line 882, ../sass/styles.scss */
+/* line 883, ../sass/styles.scss */
 .twitter-section .tweet-icon {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -1455,29 +1456,29 @@ a, button {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 891, ../sass/styles.scss */
+/* line 892, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li {
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 2%;
 }
-/* line 898, ../sass/styles.scss */
+/* line 899, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li h4 {
   font-size: 1.5em;
 }
-/* line 902, ../sass/styles.scss */
+/* line 903, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li h5 {
   font-size: 1.1em;
 }
-/* line 905, ../sass/styles.scss */
+/* line 906, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li h5 img {
   border-radius: 50%;
 }
-/* line 910, ../sass/styles.scss */
+/* line 911, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li:nth-child(odd) {
   background-color: #d6d6d6;
 }
-/* line 914, ../sass/styles.scss */
+/* line 915, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li:nth-child(even) {
   background-color: #c9c9c9;
 }
@@ -1488,7 +1489,7 @@ a, button {
 /*
  * Hide visually and from screen readers:
  */
-/* line 938, ../sass/styles.scss */
+/* line 939, ../sass/styles.scss */
 .hidden {
   display: none !important;
 }
@@ -1497,7 +1498,7 @@ a, button {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 947, ../sass/styles.scss */
+/* line 948, ../sass/styles.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1514,7 +1515,7 @@ a, button {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 964, ../sass/styles.scss */
+/* line 965, ../sass/styles.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1528,7 +1529,7 @@ a, button {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 978, ../sass/styles.scss */
+/* line 979, ../sass/styles.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1544,7 +1545,7 @@ a, button {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 994, ../sass/styles.scss */
+/* line 995, ../sass/styles.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1553,7 +1554,7 @@ a, button {
   /* 2 */
 }
 
-/* line 1000, ../sass/styles.scss */
+/* line 1001, ../sass/styles.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1565,43 +1566,43 @@ a, button {
    ========================================================================== */
 @media only screen and (max-width: 1000px) {
   /* Style adjustments for viewports that meet the condition */
-  /* line 1018, ../sass/styles.scss */
+  /* line 1019, ../sass/styles.scss */
   .class-as-whole-sect .classroom-tools-sect li button {
     font-size: 1.2em;
   }
 
-  /* line 1027, ../sass/styles.scss */
+  /* line 1028, ../sass/styles.scss */
   .indivStudent {
     width: 27%;
     margin-left: 1%;
     margin-right: 1%;
   }
-  /* line 1037, ../sass/styles.scss */
+  /* line 1038, ../sass/styles.scss */
   .indivStudent .indiv-student-label {
     font-size: 2em;
   }
-  /* line 1047, ../sass/styles.scss */
+  /* line 1048, ../sass/styles.scss */
   .indivStudent .studentSubMenu li button {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 1068, ../sass/styles.scss */
+  /* line 1069, ../sass/styles.scss */
   .class-as-whole-sect .classroom-tools-sect li button {
     font-size: .9em;
   }
 
-  /* line 1077, ../sass/styles.scss */
+  /* line 1078, ../sass/styles.scss */
   .indivStudent {
     width: 27%;
     margin-left: 1%;
     margin-right: 1%;
   }
-  /* line 1087, ../sass/styles.scss */
+  /* line 1088, ../sass/styles.scss */
   .indivStudent .indiv-student-label {
     font-size: 1.7em;
   }
-  /* line 1097, ../sass/styles.scss */
+  /* line 1098, ../sass/styles.scss */
   .indivStudent .studentSubMenu li button {
     font-size: .8em;
   }
@@ -1615,7 +1616,7 @@ a, button {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 1124, ../sass/styles.scss */
+  /* line 1125, ../sass/styles.scss */
   *,
   *:before,
   *:after {
@@ -1627,18 +1628,18 @@ a, button {
     text-shadow: none !important;
   }
 
-  /* line 1134, ../sass/styles.scss */
+  /* line 1135, ../sass/styles.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1139, ../sass/styles.scss */
+  /* line 1140, ../sass/styles.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1143, ../sass/styles.scss */
+  /* line 1144, ../sass/styles.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1647,13 +1648,13 @@ a, button {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 1152, ../sass/styles.scss */
+  /* line 1153, ../sass/styles.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 1157, ../sass/styles.scss */
+  /* line 1158, ../sass/styles.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -1664,23 +1665,23 @@ a, button {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 1168, ../sass/styles.scss */
+  /* line 1169, ../sass/styles.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 1172, ../sass/styles.scss */
+  /* line 1173, ../sass/styles.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1177, ../sass/styles.scss */
+  /* line 1178, ../sass/styles.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 1181, ../sass/styles.scss */
+  /* line 1182, ../sass/styles.scss */
   p,
   h2,
   h3 {
@@ -1688,7 +1689,7 @@ a, button {
     widows: 3;
   }
 
-  /* line 1188, ../sass/styles.scss */
+  /* line 1189, ../sass/styles.scss */
   h2,
   h3 {
     page-break-after: avoid;
