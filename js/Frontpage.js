@@ -160,7 +160,7 @@
 			$( "#classroomView" ).removeClass( "hidden" );
 
 			//change bgc color 
-			$( ".container-fluid" ).css( "background-color", "#efefef");
+			$( ".container-fluid" ).css( "background-color", "#eff4f7");
 			//update options list
 			FrontPage.showArrayOfClassroomsAsOptions();
 		},

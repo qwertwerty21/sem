@@ -691,7 +691,7 @@ a, button {
 }
 /* line 240, ../sass/styles.scss */
 .modal-create-class .modal-body {
-  background-color: #efefef;
+  background-color: #eff4f7;
   color: #100B00;
   font-size: 1.3em;
   text-align: center;
@@ -717,7 +717,7 @@ a, button {
 }
 /* line 266, ../sass/styles.scss */
 .modal-create-class .modal-footer {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 269, ../sass/styles.scss */
 .modal-create-class .modal-footer .btn {
@@ -1054,13 +1054,13 @@ a, button {
 }
 /* line 522, ../sass/styles.scss */
 .modal-student-name-change .modal-body {
-  background-color: #efefef;
+  background-color: #eff4f7;
   color: #100B00;
   font-size: 3em;
 }
 /* line 528, ../sass/styles.scss */
 .modal-student-name-change .modal-footer {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 531, ../sass/styles.scss */
 .modal-student-name-change .modal-footer .btn {
@@ -1103,7 +1103,7 @@ a, button {
 }
 /* line 577, ../sass/styles.scss */
 .modal-student-notes .modal-body {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 580, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list {
@@ -1117,11 +1117,11 @@ a, button {
 }
 /* line 589, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list li:nth-child(odd) {
-  background-color: #d6d6d6;
+  background-color: #cddde6;
 }
 /* line 593, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list li:nth-child(even) {
-  background-color: #c9c9c9;
+  background-color: #bcd1de;
 }
 /* line 597, ../sass/styles.scss */
 .modal-student-notes .modal-body .past-students-notes-list button {
@@ -1137,7 +1137,7 @@ a, button {
 }
 /* line 615, ../sass/styles.scss */
 .modal-student-notes .modal-footer {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 618, ../sass/styles.scss */
 .modal-student-notes .modal-footer textarea {
@@ -1188,7 +1188,7 @@ a, button {
 }
 /* line 674, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 677, ../sass/styles.scss */
 .modal-choose-volunteer .modal-footer button {
@@ -1379,7 +1379,7 @@ a, button {
 }
 /* line 805, ../sass/styles.scss */
 .modal-class-reflections .modal-body {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 808, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list {
@@ -1393,11 +1393,11 @@ a, button {
 }
 /* line 817, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li:nth-child(odd) {
-  background-color: #d6d6d6;
+  background-color: #cddde6;
 }
 /* line 821, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list li:nth-child(even) {
-  background-color: #c9c9c9;
+  background-color: #bcd1de;
 }
 /* line 825, ../sass/styles.scss */
 .modal-class-reflections .modal-body .past-reflections-list button {
@@ -1413,7 +1413,7 @@ a, button {
 }
 /* line 842, ../sass/styles.scss */
 .modal-class-reflections .modal-footer {
-  background-color: #efefef;
+  background-color: #eff4f7;
 }
 /* line 845, ../sass/styles.scss */
 .modal-class-reflections .modal-footer textarea {
@@ -1476,11 +1476,11 @@ a, button {
 }
 /* line 911, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li:nth-child(odd) {
-  background-color: #d6d6d6;
+  background-color: #cddde6;
 }
 /* line 915, ../sass/styles.scss */
 .twitter-section .indiv-tweet-li:nth-child(even) {
-  background-color: #c9c9c9;
+  background-color: #bcd1de;
 }
 
 /* ==========================================================================
